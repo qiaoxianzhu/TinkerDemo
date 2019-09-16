@@ -47,11 +47,7 @@ dependencies {
 
     //Gson
     implementation 'com.google.code.gson:gson:2.8.5'
-    // 若使用annotation需要单独引用,对于tinker的其他库都无需再引用
-    provided("com.tinkerpatch.tinker:tinker-android-anno:1.9.13.3")
-    compile("com.tinkerpatch.sdk:tinkerpatch-android-sdk:1.2.13.3")
-    //支持分包操作
-    compile 'com.android.support:multidex:1.0.1'
+
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.0.2'
@@ -68,4 +64,6 @@ dependencies {
     // room 配合 RxJava
     implementation "android.arch.persistence.room:rxjava2:1.1.1"
     annotationProcessor 'android.arch.persistence.room:compiler:1.1.1'
+
+   
 }
